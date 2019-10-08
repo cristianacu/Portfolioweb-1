@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi Porfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+
+</head>
+<style type="text/css">
+	/*CSS DEL FOOTER*/
+	footer{
+		background: white;
+		border-top: black 6px solid;
+		border-radius: 6px;
+	}
+
+	/*NAV*/
+	.menu{
+		font-size: 25px;
+		color: black;
+		font-family: 'Montserrat SemiBolt', sans-serif;
+
+	}
+	.menu:hover{
+		border-bottom: 4px solid;
+		border-radius: 2px;
+		padding-bottom:2px;
+		text-decoration: none;
+	}
+
+	
+	#pie{position: relative;
+		bottom:0px;
+		
+	}
+	.icono{
+		font-size: 45px;
+	}
+	
+	/*Fondos*/
+	.fondoCeleste{
+		background: rgb(226 224 224);
+	}
+	#fondoBlanco{
+		background-image: url(images/Fondos-11.png);
+		background-size: contain;		
+		
+	}
+	.caja{
+	height: 250px;
+	background-color: rgb(255 255 255);
+	border-left: 15px solid rgb(226 224 224);
+	}
+
+	
+	#top{	padding-top: 50px;
+		padding-bottom: 20px;
+	}
+	#bot{padding-bottom: 50px;
+
+	}
+	.iconosArribaSobreMi{
+		font-size: 30px;
+		color: white;
+		margin-top: 9px;
+		margin-left: 6px;
+	}
+
+	.iconosAbajoSobreMi{
+	font-size: 30px;
+	color: white;
+	margin-top: 9px;
+	margin-left: 8px;
+	}
+	.tituloCaja{
+	font-size: 22px;
+    font-family: 'Montserrat SemiBold', sans-serif;
+    line-height: 18px;
+    color: rgb(0 53 111);
+
+}
+.iconosSobreMi{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 50px;
+	height: 50px;
+	background-color: rgb(28 26 26);
+}
+
+#sobreMi{	
+		padding-bottom: 30px;
+		margin-top: 5%;
+	}
+.fuente{	/* personaliza la fuente del titulo*/
+		font-size:100px;
+		font-family: 'Bree Serif', serif;
+
+
+	}
+	.lafuente{
+		font-size: 24px;
+		font-family: 'Montserrat', sans-serif;
+
+	}
+	#descarga {
+		margin-top: 15px;
+		font-size: 16px;
+		font-family: ' roboto', sans-serif;
+	}
+
+
+
+#expe{
+		font-size: 30px;
+		border-bottom: 2px solid;
+		margin-top: 5px;
+		padding-bottom: 2px;
+}
+.bloqueExperiencia{
+	color: rgb(255 255 255);
+	font-family: 'Montserrat SemiBold', sans-serif;
+	font-size: 20px;
+	background-color: rgb(0 53 111);
+}
+
+.bordesFin{
+		 font-size: 20px;
+		 font-family: 'Montserrat', sans-serif;
+		 margin-top: 5px;
+		 margin-bottom: 5px;
+		 border-bottom: 1px solid;
+}
+
+
+
+</style>
+<body>
+	<div class="container-fluid">
+		<!-- INICIO NAV--><div id="fondoBlanco">
+		<div class="row ">
+			<div class="col-12">
+
+				<nav>
+					<ul class="navbar-nav">
+						<div class="row">
+							<div class="col-2 offset-2">
+								<li>
+									<a href="index.html" class="menu">Home</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="Sobre Mi.html" class="menu">Sobre Mi</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="Porfolio.html" class="menu">Porfolio</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="#" class="menu">Contacto</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+
+				</nav>
+			</div>
+		</div>
+		<!-- FIN NAV-->
+
+		<!--INICIO DE SOBRE MI-->
+		<div class="row" id="sobreMi">
+			<div class="col-sm-10 offset-1">
+				<div class="row">
+					<div class="col-sm-10">
+						<h1 class="fuente">Sobre mi</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<h3 class="lafuente">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat.</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						<a href="#" class="btn btn-dark" id="descarga">Descargar CV</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!--FIN DE SOBRE MI-->
+		<!--CONTENIDO MEDIO-->
+
+		<div class="row fondoCeleste" id="top">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-5 offset-1 caja" >
+						<div class="row">
+							<div class="col-sm ">
+								<div class="iconosSobreMi">
+									<i class="fas fa-code iconosArribaSobreMi"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row  my-1">
+							<div class="col-sm">
+								<h5 class="tituloCaja">LENGUAJES DE PROGRAMACION</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<p>
+									PHP,Python,C#,Java,HTML
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 caja">
+						<div class="row">
+							<div class="col-sm ">
+								<div class="iconosSobreMi">
+									<i class="fas fa-laptop-code iconosArribaSobreMi"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row my-1">
+							<div class="col-sm">
+								<h5 class="tituloCaja">SOFTWARE</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<p>
+									Jenkins
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="row fondoCeleste " id="bot">
+			<div class="col-sm-12">
+				<div class="row">
+					<div class="col-sm-5 offset-1 caja">
+						<div class="row">
+							<div class="col-sm">
+								<div  class="iconosSobreMi">
+									<i class="far fa-comments iconosAbajoSobreMi"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<h5 class="tituloCaja">IDIOMAS</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<p>
+									ESPANOL - Nativo<br>INGLES - Basico
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-5 caja">
+						<div class="row">
+							<div class="col-sm">
+								<div class="iconosSobreMi">
+									<i class="fas fa-puzzle-piece iconosAbajoSobreMi"></i>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<h5 class="tituloCaja">HOBBIES</h5>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm">
+								<p>
+									LEER LIBROS
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- FINDE CONTENIDO MEDIO-->
+
+		<!-- FIN-->
+
+		<div class="row bloqueExperiencia">
+			<div class="col-12">
+			<div class="row">
+					<div class="col-sm-3">
+						<h3 id="expe" class="bordesFin">Experiencia laboral</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3 offset-1 bordesFin">
+						<p>2011 - Presente</p>
+					</div>
+					<div class="col-sm-4 bordesFin" >
+						<p>Soporte Tecnico <br> Obra Social Union Personal</p>
+					</div>
+					<div class="col-sm-3 bordesFin">
+						<p>Soporte tecnico nivel 2 Soporte tecnico nivel 2  Soporte tecnico nivel 2 </p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 offset-1 bordesFin">
+						<p>2011 - Presente</p>
+					</div>
+					<div class="col-sm-4 bordesFin">
+						<p>Soporte Tecnico <br> Obra Social Union Personal</p>
+					</div>
+					<div class="col-sm-3 bordesFin">
+						<p>Soporte tecnico nivel 2 Soporte tecnico nivel 2  Soporte tecnico nivel 2 </p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 offset-1 bordesFin">
+						<p>2011 - Presente</p>
+					</div>
+					<div class="col-sm-4 bordesFin">
+						<p>Soporte Tecnico <br> Obra Social Union Personal</p>
+					</div>
+					<div class="col-sm-3 bordesFin">
+						<p>Soporte tecnico nivel 2 Soporte tecnico nivel 2  Soporte tecnico nivel 2 </p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-sm-3 offset-1 bordesFin">
+						<p>2011 - Presente</p>
+					</div>
+					<div class="col-sm-4 bordesFin">
+						<p>Soporte Tecnico <br> Obra Social Union Personal</p>
+					</div>
+					<div class="col-sm-3 bordesFin">
+						<p>Soporte tecnico nivel 2 Soporte tecnico nivel 2  Soporte tecnico nivel 2 </p>
+					</div>
+				</div>
+		</div>
+		</div>
+		<!-- FIN-->
+
+		<!-- INICIO DEL FOOTER-->
+		<div class="row">
+			<div class="col-12" id="pie">
+				<footer >
+					<div class="row">
+						<div class="col-2 offset-3">
+							<div class="icono">
+								<i class="fab fa-instagram"> </i>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="icono">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="icono">
+								<i class="fab fa-facebook"></i>
+							</div>
+						</div>
+					</div>	
+				</footer>
+
+			</div>
+		</div>
+				</div>		<!-- FIN DEL FOOTER-->
+			</div>

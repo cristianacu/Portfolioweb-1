@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+	
+body
+		{background-color: rgb(0 53 111);
+
+	}
+	/*NAV*/
+	.menu{
+		font-size: 25px;
+		color: white;
+		font-family: 'Montserrat SemiBolt', sans-serif;
+
+	}
+	.menu:hover{
+		border-bottom: 4px solid;
+		border-radius: 2px;
+		padding-bottom:2px;
+		text-decoration: none;
+	}
+
+	
+	#pie{position: relative;
+		bottom:0px;
+		color: white
+		background: white;
+		border-top: black 6px solid;
+		border-radius: 6px;
+		background-color: #fff
+		
+	}
+	.icono{
+		font-size: 45px;
+	}
+	#sobreMi{	
+		padding-bottom: 10px;
+		margin-top: 5%;
+	}
+	.fuente{	/* personaliza la fuente del titulo*/
+		font-size:100px;
+		font-family: 'Bree Serif', serif; 
+		color: #FFF;
+	}
+	.otrafuente {
+		font-family: 'roboto', serif; 
+		padding-bottom:  3%;
+		color: #fff;
+	}
+	.fondoBlando{
+		background-color: #FFF;
+	}
+	#formulario{
+	margin-top: 70px;
+	padding-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+	border-top: 2px solid;
+}
+.control{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-radius: 0px;
+
+}
+#mensaje {
+	resize: none;
+}
+
+</style>
+<body>
+	<div class="container-fluid">
+		
+<!--inicio-->
+		<div class="row ">
+			<div class="col-12">
+
+				<nav>
+					<ul class="navbar-nav">
+						<div class="row">
+							<div class="col-2 offset-2">
+								<li>
+									<a href="index.html" class="menu">Home</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="Sobre Mi.html" class="menu">Sobre Mi</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="Porfolio.html" class="menu">Porfolio</a>
+								</li>
+							</div>
+							<div class="col-2">
+								<li>
+									<a href="Contacto.html" class="menu">Contacto</a>
+								</li>
+							</div>
+						</div>
+					</ul>
+
+				</nav>
+			</div>
+		</div>
+		<!-- FIN NAV-->
+		<div class="row" id="sobreMi">
+			<div class="col-sm-12" >
+				<div class="row">
+					<div class="col-sm-9 offset-1">
+						<h1 class="fuente">¡Trabajemos juntos!</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-9 offset-1">
+						<h5 class="otrafuente">
+							Para mas detalles de mis trabajos podes ver mi <a href="#">Linkedin</a>, descargar mi <a href="#">CV</a> o enviarme un <a href="#nombre">mensaje</a>. 
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- PAGINA -->
+<div class="row fondoBlando" id="formulario">
+			<div class="col-sm-10 offset-2">
+				<div class="row">
+					<div class="col-sm-12">
+						<form class="form-group">
+							<div class="row">
+								<div class="col-sm-4 form-group">
+									<input type="text" name="nombre" id="nombre" placeholder="Nombre" class=" control form-control">
+								</div>
+								<div class="col-sm-4 form-group">
+									<input type="mail" name="mail" id="mail" placeholder="Email" class=" control  form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-8 form-group">
+									<input type="text" name="asunto" id="asunto" placeholder="Asunto" class=" control form-control">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-8 form-group">
+									<textarea class=" control form-control" id="mensaje" rows="5" placeholder="Mensaje"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-8 form-group">
+									<div class="row justify-content-center">
+										<div class="col-sm-2 align-self-center">
+										<input type="submit" name="enviar" id="enviar" value="ENVIAR" class="form-control btn btn-secondary">
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- INICIO DEL FOOTER-->
+		<div class="row" id="pie">
+			<div class="col-12">
+				<footer >
+					<div class="row">
+						<div class="col-2 offset-3">
+							<div class="icono">
+								<i class="fab fa-instagram"> </i>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="icono">
+								<i class="fab fa-whatsapp"></i>
+							</div>
+						</div>
+						<div class="col-2">
+							<div class="icono">
+								<i class="fab fa-facebook"></i>
+							</div>
+						</div>
+					</div>	
+				</footer>
+
+			</div>
+		</div>
+		<!-- FIN DEL FOOTER-->
+
+
+
+
+	</div>
+
+</body>
+</html>
