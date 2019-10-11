@@ -2,34 +2,124 @@
 <html>
 <head>
 	<title>Mi Porfolio</title>
+	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!--necesario para que la barra sea responsiba fuera de bootstrap-->
 	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
 
+
 </head>
 <style type="text/css">
+
+
+	/*BARRA*/
+	* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+
+ 
+header nav ul li {
+	padding-left: 60px;
+	font-size: 25px;
+		color: white;
+		font-family: 'Montserrat SemiBolt', sans-serif;
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	
+border-radius: 2px;
+
+}
+ 
+header nav ul li a {
+	color:rgb(23, 32, 42);
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+
+
+
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: rgb(23, 32, 42);
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		background:rgb(23, 32, 42);
+	}
+ 
+	
+	header nav {
+		background:rgb(23, 32, 42);
+		width: 100%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+	color:#FFF;
+}
+ 
+	}
+
+	/*FINDE DE LA BARRA*/
 	/*CSS DEL FOOTER*/
 	footer{
 		background: white;
 		border-top: black 6px solid;
 		border-radius: 6px;
 	}
-
-	/*NAV*/
-	.menu{
-		font-size: 25px;
-		color: black;
-		font-family: 'Montserrat SemiBolt', sans-serif;
-
-	}
-	.menu:hover{
-		border-bottom: 4px solid;
-		border-radius: 2px;
-		padding-bottom:2px;
-		text-decoration: none;
-	}
-
+	
 	
 	#pie{position: relative;
 		bottom:0px;
@@ -137,41 +227,25 @@
 
 </style>
 <body>
+
+
+	<header>
+	<div class="menu_bar">
+		<a href="#" class="bt-menu"><i class="fas fa-bars"></i>MENU</a>
+
+	</div>
+	<nav>
+		<ul>
+			<li><a href="home.html" class="menu">Home</a></li>
+			<li><a href="sobre mi.html" class="menu">Sobre Mi</a></li>
+			<li><a href="portfolio.html" class="menu">Portfolio</a></li>
+			<li><a href="contacto.html" class="menu">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+
 	<div class="container-fluid">
-		<!-- INICIO NAV--><div id="fondoBlanco">
-		<div class="row ">
-			<div class="col-12">
-
-				<nav>
-					<ul class="navbar-nav">
-						<div class="row">
-							<div class="col-2 offset-2">
-								<li>
-									<a href="index.html" class="menu">Home</a>
-								</li>
-							</div>
-							<div class="col-2">
-								<li>
-									<a href="Sobre Mi.html" class="menu">Sobre Mi</a>
-								</li>
-							</div>
-							<div class="col-2">
-								<li>
-									<a href="Porfolio.html" class="menu">Porfolio</a>
-								</li>
-							</div>
-							<div class="col-2">
-								<li>
-									<a href="#" class="menu">Contacto</a>
-								</li>
-							</div>
-						</div>
-					</ul>
-
-				</nav>
-			</div>
-		</div>
-		<!-- FIN NAV-->
+		
 
 		<!--INICIO DE SOBRE MI-->
 		<div class="row" id="sobreMi">
@@ -389,3 +463,7 @@
 		</div>
 				</div>		<!-- FIN DEL FOOTER-->
 			</div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

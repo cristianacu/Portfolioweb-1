@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Contacto</title>
+	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!--necesario para que la barra sea responsiba fuera de bootstrap-->
+	 <link rel="stylesheet" type="text/css" href="css/estilos.css"> <!--style.css-->
 	<link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
 	<link rel="stylesheet" href="css/fontawesome/css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -12,20 +14,12 @@
 body
 		{background-color: rgb(0 53 111);
 
-	}
+	
 	/*NAV*/
-	.menu{
-		font-size: 25px;
-		color: white;
-		font-family: 'Montserrat SemiBolt', sans-serif;
+	
 
 	}
-	.menu:hover{
-		border-bottom: 4px solid;
-		border-radius: 2px;
-		padding-bottom:2px;
-		text-decoration: none;
-	}
+	
 
 	
 	#pie{position: relative;
@@ -77,9 +71,26 @@ body
 
 </style>
 <body>
+
+
+	<header>
+	<div class="menu_bar">
+		<a href="#" class="bt-menu"><i class="fas fa-bars"></i>MENU</a>
+
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="menu">Home</a></li>
+			<li><a href="sobre mi.html" class="menu">Sobre Mi</a></li>
+			<li><a href="porfolio.html" class="menu">Portfolio</a></li>
+			<li><a href="contacto.html" class="menu">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+
 	<div class="container-fluid">
 		
-<!--inicio-->
+<!--inicio--
 		<div class="row ">
 			<div class="col-12">
 
@@ -112,7 +123,7 @@ body
 				</nav>
 			</div>
 		</div>
-		<!-- FIN NAV-->
+		- FIN NAV-->
 		<div class="row" id="sobreMi">
 			<div class="col-sm-12" >
 				<div class="row">
@@ -199,6 +210,7 @@ body
 
 
 	</div>
-
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

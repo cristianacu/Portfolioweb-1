@@ -2,8 +2,11 @@
 <html>
 <head>
 	
-    <title>Jumbotron Template · Bootstrap</title>
+    <title>Home</title>
     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><!--necesario para que la barra sea responsiba fuera de bootstrap-->
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
@@ -14,26 +17,111 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
 
 
-<style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
 
 </head>
 <style type="text/css">
+
+	/*BARRA*/
+	* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ 
+
+ 
+.menu_bar {
+	display:none;
+}
+ 
+header {
+	width: 100%;
+}
+ 
+header nav {
+	z-index:1000;
+	max-width: 1000px;
+	width:95%;
+	margin:20px auto;
+}
+
+ 
+header nav ul li {
+	padding-left: 60px;
+	font-size: 25px;
+		color: white;
+		font-family: 'Montserrat SemiBolt', sans-serif;
+	display:inline-block;
+	position: relative;
+}
+ 
+header nav ul li:hover {
+	
+border-radius: 2px;
+
+}
+ 
+header nav ul li a {
+	color:rgb(23, 32, 42);
+	display:block;
+	text-decoration:none;
+	padding: 20px;
+}
+ 
+
+
+
+ 
+@media screen and (max-width: 800px) {
+	body {
+		padding-top:80px;
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		position: fixed;
+		top:0;
+		background: rgb(23, 32, 42);
+	}
+ 
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		color: #fff;
+		overflow: hidden;
+		font-size: 25px;
+		font-weight: bold;
+		text-decoration: none;
+		background:rgb(23, 32, 42);
+	}
+ 
+	
+	header nav {
+		background:rgb(23, 32, 42);
+		width: 100%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right:100%;
+		margin: 0;
+		overflow: scroll;
+	}
+ 
+	header nav ul li {
+		display: block;
+		border-bottom:1px solid rgba(255,255,255,.5);
+	}
+ 
+	header nav ul li a {
+	color:#FFF;
+}
+ 
+	}
+
+	/*FINDE DE LA BARRA*/
 
 	body{ /*persona*/
 		background-image: url(images/Fondos-01.png);
@@ -44,18 +132,7 @@
 			border-top: black 6px solid;
 			border-radius: 6px;
 	}
-	.menu{
-		font-size: 25px;
-		color: black;
-		font-family: 'Montserrat SemiBolt', sans-serif;
-
-	}
-	.menu:hover{
-		border-bottom: 4px solid;
-		border-radius: 2px;
-		padding-bottom:2px;
-		text-decoration: none;
-	}
+	
 
 	.fuente{	/* personaliza la fuente del titulo*/
 		font-size:100px;
@@ -90,46 +167,24 @@
 
 </style>
 <body>
-	 <nav class="navbar navbar-expand-md navbar-ligth fixed-top bg-ligth menu" >
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<header>
+	<div class="menu_bar">
+		<a href="#" class="bt-menu"><i class="fas fa-bars"></i>MENU</a>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="index.html" class="menu">Home</a></li>
+			<li><a href="sobre mi.html" class="menu">Sobre Mi</a></li>
+			<li><a href="porfolio.html" class="menu">Portfolio</a></li>
+			<li><a href="contacto.html" class="menu">Contacto</a></li>
+		</ul>
+	</nav>
+</header>
+
+	
 	<div class="container-fluid">
 		
-
-
-
-
-
-
 		<!-- INICIO NAV
 		<div class="row ">
 			<div class="col-12">
@@ -166,7 +221,7 @@
  FIN NAV-->
 			<div class="presentacion">
 						<div class="row">
-							<div class="col-10 offset-1">
+							<div class="col-11 col-md-11 offset-1">
 								<h1 class="fuente">Hola <br> Soy Pablo Gonzalez</h1>
 							</div>
 						</div>
@@ -174,7 +229,7 @@
 					<div class="sep">
 						<!-- INICIO DE DESARROLLO-->
 						<div class="row">
-							<div class="col-10 offset-1">
+							<div class="col-10 col-md-10 offset-1">
 								<h5 class="lafuente">Desarrollador Full Stack</h5>
 							</div>
 						</div>
@@ -217,7 +272,7 @@
 						<!-- FIN DEL FOOTER-->
 </div> 
 
-<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
